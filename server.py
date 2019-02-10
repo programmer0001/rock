@@ -1,7 +1,7 @@
 import http.server as h                                         # иморт модулей
 import socketserver as s
 
-PORT = 8070                                                     # порт прослушки
+PORT = 8080                                                     # порт прослушки
 Handler = h.SimpleHTTPRequestHandler                            # обработчик запросов, отдает
                                                                 # статичный файл в текущей папке
 
