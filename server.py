@@ -16,7 +16,7 @@ PORT = environ.get('PORT', "8080")
 # serv.serve_forever()
 
 def run(server_class=HTTPServer, handler_class=HttpProcessor):
-    server_address = int(PORT)
+    server_address = ('', int(PORT))
     httpd = server_class(server_address, handler_class)
     httpd.serve_forever()
 
