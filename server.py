@@ -1,10 +1,9 @@
 import http.server as h                                         # иморт модулей
 import socketserver as s
 from os import environ
-PORT = environ.get('PORT', "8080")
 
 
-PORT = 8080                                                     # порт прослушки
+PORT = environ.get('PORT', "8080")                                          # порт прослушки
 Handler = h.SimpleHTTPServer                            # обработчик запросов, отдает
                                                                 # статичный файл в текущей папке
 
