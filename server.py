@@ -8,7 +8,7 @@ class HttpProcessor(BaseHTTPRequestHandler):
     self.send_response(200)
     self.send_header('content-type','text/html')
     self.end_headers()
-    self.wfile(index.html)#write("hello !")
+    self.path(index.html)#write("hello !")
 
 PORT = environ.get('PORT', "8080")
 
