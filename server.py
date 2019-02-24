@@ -1,3 +1,13 @@
+from http.server import HTTPServer, CGIHTTPRequestHandler
+
+PORT = ("", 8000)
+
+httpd = HTTPServer(PORT, CGIHTTPRequestHandler)
+httpd.serve_forever()
+
+
+
+'''
 import http.server as h
 import socketserver as s
 from os import environ
@@ -21,3 +31,4 @@ def run(server_class=HTTPServer, handler_class=HttpProcessor):
     httpd.serve_forever()
 
 run()
+'''
