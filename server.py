@@ -38,7 +38,7 @@ class HttpProcessor(BaseHTTPRequestHandler):
     self.wfile.write(ind.encode())
     return
 
-PORT = environ.get('PORT', "8029")
+PORT = environ.get('PORT', "8080")
 
 # serv = HTTPServer(int(PORT),HttpProcessor)
 # serv.serve_forever()
