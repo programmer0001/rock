@@ -35,7 +35,7 @@ class HttpProcessor(BaseHTTPRequestHandler):
     self.send_response(200)
     self.send_header('content-type','text/html')
     self.end_headers()
-    self.wfile.write(ind.encode())
+    self.path = '/index.html'              #wfile.write(ind.encode())
     return
 
 PORT = environ.get('PORT', "8080")
