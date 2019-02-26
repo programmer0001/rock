@@ -1,7 +1,7 @@
 from http.server import BaseHTTPRequestHandler as hand
 from http.server import HTTPServer as hs                # import modules
 
-PORT = 4000                                             # listening port
+PORT = 8080                                             # listening port
 
 ind = '''
 <html lang="en">
