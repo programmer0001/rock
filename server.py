@@ -1,7 +1,8 @@
 from http.server import BaseHTTPRequestHandler 
 from http.server import HTTPServer                      # import modules
+from os import environ
 
-PORT = 8080                                             # listening port
+PORT = environ.get('8080')                              # listening port
 
 ind = '''
 <html lang="en">
@@ -45,8 +46,8 @@ class myHandler(BaseHTTPRequestHandler):
 
 
 def run():
-    server = HTTPServer(('', PORT), myHandler)                  # handling request
-    print('Started server on port: ', PORT)             # message about server's work
+    server = HTTPServer(('', int(PORT)), myHandler)                  # handling request
+    print('Started server on port: ', (PORT))             # message about server's work
     server.serve_forever()                              # non-stop working
 
 run()
