@@ -1,5 +1,5 @@
-from http.server import BaseHTTPRequestHandler as hand
-from http.server import HTTPServer as hs                # import modules
+from http.server import BaseHTTPRequestHandler 
+from http.server import HTTPServer                      # import modules
 
 PORT = 8080                                             # listening port
 
@@ -31,7 +31,7 @@ ind = '''
 </html>
 '''
 
-class myHandler(hand):
+class myHandler(BaseHTTPRequestHandler):
    	def do_GET(self):
 		#self.path = "index.html"                        # path to necessary file
 
@@ -45,7 +45,7 @@ class myHandler(hand):
 
 
 def run():
-    server = hs(('', PORT), myHandler)                  # handling request
+    server = HTTPServer(('', PORT), myHandler)                  # handling request
     print('Started server on port: ', PORT)             # message about server's work
     server.serve_forever()                              # non-stop working
 
