@@ -1,6 +1,5 @@
 from http.server import BaseHTTPRequestHandler as hand
 from http.server import HTTPServer as hs            # import modules
-from os import curdir, sep
 
 PORT_NUMBER = 8080                                  # listening port
 
