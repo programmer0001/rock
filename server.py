@@ -1,51 +1,25 @@
-from io import BufferedIOBase as iob
-import http.server as h
-import socketserver as s
-from os import environ
-from http.server import BaseHTTPRequestHandler,HTTPServer
+from http.server import BaseHTTPRequestHandler as hand
+from http.server import HTTPServer as hs            # import modules
+from os import curdir, sep
 
-ind = '''<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        div {
-            font-size: 4em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 90vh;
-            width: 100%;
-            color: forestgreen;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <div>Hello, world!</div>
+PORT_NUMBER = 8080                                  # listening port
 
-</body>
-</html>'''
+class myHandler(hand):                              # class for handling requests
+	def do_GET(self):
+		self.path = "index.html"                    # path to necessary file
 
-class HttpProcessor(BaseHTTPRequestHandler):
-  def do_GET(self):
-    self.send_response(200)
-    self.send_header('content-type','text/html')
-    self.end_headers()
-    self.path = '/index.html'              #wfile.write(ind.encode())
-    return
+		f = open(self.path)                         # opening and reading file
+		ff = f.read()
 
-PORT = environ.get('PORT', "8080")
+		self.send_response(200)                     # answer for browser
+		self.send_header('Content-type','text/html')# info about file
+		self.end_headers()
+		self.wfile.write(ff.encode())               # send file
 
-# serv = HTTPServer(int(PORT),HttpProcessor)
-# serv.serve_forever()
 
-def run(server_class=HTTPServer, handler_class=HttpProcessor):
-    server_address = ('', int(PORT))
-    httpd = server_class(server_address, handler_class)
-    httpd.serve_forever()
+def run():
+	server = hs(('', PORT_NUMBER), myHandler)       # handling request
+	print('Started server on port: ', PORT_NUMBER)  # message about server's work
+	server.serve_forever()                          # non-stop working
 
 run()
