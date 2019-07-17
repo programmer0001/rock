@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>ic_refresh</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="plink.league" transform="translate(-1436.000000, -404.000000)">
+            <g id="Group-18" transform="translate(1436.000000, 404.000000)">
+                <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                <g id="refresh" transform="translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) translate(4.000000, 4.000000)" fill="#E8E8EA" fill-rule="nonzero">
+                    <path d="M13.65,2.35 C12.2,0.9 10.21,0 8,0 C3.581722,-4.4408921e-16 -6.21724894e-15,3.581722 -7.10542736e-15,8 C-7.54951657e-15,12.418278 3.581722,16 8,16 C11.73,16 14.84,13.45 15.73,10 L13.65,10 C12.83,12.33 10.61,14 8,14 C4.6862915,14 2,11.3137085 2,8 C2,4.6862915 4.6862915,2 8,2 C9.66,2 11.14,2.69 12.22,3.78 L9,7 L16,7 L16,0 L13.65,2.35 Z" id="Shape" transform="translate(8.000000, 8.000000) rotate(-90.000000) translate(-8.000000, -8.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

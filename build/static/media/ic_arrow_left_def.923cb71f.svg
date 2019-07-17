@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>ic_arrow_left_def</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="plink.league" transform="translate(-443.000000, -1124.000000)">
+            <g id="Group-16-Copy-2" transform="translate(443.000000, 1124.000000)">
+                <rect id="Rectangle" x="0" y="0" width="8" height="12"></rect>
+                <path d="M8.24148999,9 C8.04235139,9 7.84340245,8.92747059 7.69452264,8.78329412 L3.50009483,4.72429412 L-0.694522644,8.78329412 C-0.98507534,9.06423529 -1.46528384,9.07305882 -1.76721589,8.80288235 C-2.06914793,8.53270588 -2.07863072,8.08588235 -1.78826768,7.80494118 L2.95312748,3.21670588 C3.09612796,3.07817647 3.29374931,3 3.50009483,3 C3.70625069,3 3.90387204,3.07817647 4.04687252,3.21670588 L8.78826768,7.80494118 C9.07863072,8.08588235 9.06914793,8.53270588 8.76721589,8.80288235 C8.62004298,8.93452941 8.43076648,9 8.24148999,9" id="chevron-up-copy-3" fill="#E8E8EA" transform="translate(3.500000, 6.000000) scale(-1, 1) rotate(-270.000000) translate(-3.500000, -6.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

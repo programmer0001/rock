@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e166cffa.chunk.css",
+    "main.js": "/static/js/main.508fb2c8.chunk.js",
+    "main.js.map": "/static/js/main.508fb2c8.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.543c14f3.chunk.js": "/static/js/2.543c14f3.chunk.js",
+    "static/js/2.543c14f3.chunk.js.map": "/static/js/2.543c14f3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ee174b3d22e435aaf98010b96f3e10ac.js": "/precache-manifest.ee174b3d22e435aaf98010b96f3e10ac.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e166cffa.chunk.css.map": "/static/css/main.e166cffa.chunk.css.map",
+    "static/media/App.css": "/static/media/screens.6c817361.png",
+    "static/media/Countries.css": "/static/media/zw.fe57a677.svg",
+    "static/media/Landing.css": "/static/media/landing_i4.8e9da713.svg",
+    "static/media/index.css": "/static/media/liked.3a7b6224.svg",
+    "static/media/SideMenu.css": "/static/media/ic_twitch_def.0506f765.svg",
+    "static/media/Header.css": "/static/media/ic_notification.ca3819f0.svg",
+    "static/media/SquadContainer.css": "/static/media/message.3577e54a.svg"
+  }
+}
