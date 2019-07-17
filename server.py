@@ -10,7 +10,7 @@ class myHandler(hand):                                        # class for handli
 		self.send_header('Content-type','text/html')  # info about file
 		self.end_headers()
 
-		self.path = "index.html"                      # path to necessary file
+		self.path = "/build/index.html"                      # path to necessary file
 		f = open(self.path)                           # opening and reading file
 		ff = f.read()
 		self.wfile.write(ff.encode())                 # send file
